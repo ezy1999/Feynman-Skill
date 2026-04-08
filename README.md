@@ -1,7 +1,11 @@
-# Feynman Research Taste Modeling System
+**🌐 Language / 语言选择：** [中文（默认）](#) | [English](./docs/README_EN.md) | [日本語](./docs/README_JA.md) | [Français](./docs/README_FR.md) | [Deutsch](./docs/README_DE.md)
 
-> **Evidence-based computational modeling of Richard Feynman's scientific research taste.**
-> Evaluate, rank, and explain how Feynman would have assessed candidate scientific theories — grounded in historical evidence, not role-playing.
+---
+
+# Feynman-Skill：费曼科研品味建模系统
+
+> **基于史料证据的费曼科研品味计算建模**
+> 评估、排序和解释费曼会如何评价候选科学理论——基于历史证据，而非角色扮演。
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)]()
 [![Tests](https://img.shields.io/badge/tests-16%20passed-brightgreen.svg)]()
@@ -9,92 +13,74 @@
 
 ---
 
-## What Is This?
+## 这是什么？
 
-This system models Richard Feynman's **research taste** — his distinctive preferences for certain kinds of scientific approaches. It answers questions like:
+本系统对理查德·费曼的**科研品味**进行建模——即他对不同科学方法和理论的独特偏好。
 
-- *"Would Feynman prefer a path-integral approach or an axiomatic formulation?"*
-- *"How would Feynman evaluate a purely formal mathematical theory?"*
-- *"Would 1950s Feynman or 1980s Feynman be more interested in cross-domain work?"*
+- *"费曼会更喜欢路径积分方法还是公理化量子力学？"*
+- *"费曼会如何评价一个纯形式化的数学理论？"*
+- *"1950年代的费曼和1980年代的费曼，谁对跨领域研究更感兴趣？"*
 
-**This is NOT role-playing.** Every evaluation is grounded in documented evidence from Feynman's published papers, lectures, books, and biographical scholarship.
+**这不是角色扮演。** 每个评估都以费曼的发表论文、演讲、书籍和传记学术研究为证据基础。
 
-## Feynman's Distinctive Scientific Style
+## 费曼独特的科学风格
 
-Feynman's approach to science was unique and recognizable:
+| 维度 | 费曼的方法 |
+|------|-----------|
+| **策略** | 自下而上——从计算和具体例子出发 |
+| **数学** | 计算工具，非目的本身 |
+| **形式化** | 反形式主义——不信任纯抽象 |
+| **探索** | 玩乐式、好奇心驱动（"旋转盘子"→诺贝尔奖） |
+| **权威** | 极度不敬、独立重推一切 |
+| **领域** | 广泛涉猎（QED → 生物 → 纳米技术 → 量子计算） |
+| **解释** | "如果不能向大一新生解释清楚，你就不理解" |
 
-| Dimension | Feynman's Approach |
-|-----------|-------------------|
-| **Strategy** | Bottom-up: start from calculations and specific examples |
-| **Math** | Tool for getting numbers, not an end in itself |
-| **Formalism** | Anti-formalist — distrusted pure abstraction |
-| **Exploration** | Playful, curiosity-driven ("wobbling plates" → Nobel Prize) |
-| **Authority** | Fiercely irreverent, re-derived everything from scratch |
-| **Domains** | Broad versatility (QED → biology → nanotech → quantum computing) |
-| **Explanation** | "If you can't explain it to a freshman, you don't understand it" |
+## 10个品味轴
 
-## The 10 Taste Axes
+| # | 品味轴 | 权重 | 含义 | 关键证据 |
+|---|--------|------|------|---------|
+| 1 | **物理直觉** | 0.95 | 图像和可视化优先于抽象形式 | 物理定律特性 (1965); 费曼图 |
+| 2 | **计算实用主义** | 0.90 | 能不能算出一个数字？ | 路径积分 (1948); QED精度达10位 |
+| 3 | **经验严酷性** | 0.90 | "与实验不符就是错的" | 货物崇拜科学 (1974) |
+| 4 | **玩乐式探索** | 0.85 | 好奇心驱动，无压力 | 旋转盘子→诺贝尔奖 |
+| 5 | **独立思考** | 0.85 | 挑战权威，从第一性原理思考 | 挑战玻尔; 挑战者号调查 |
+| 6 | **反形式主义** | 0.80 | 不信任纯数学方法 | 不喜欢公理化QM |
+| 7 | **自下而上推理** | 0.80 | 从具体例子开始推广 | 部分子模型 (1969) |
+| 8 | **多重表示** | 0.75 | 多种表述 = 更深理解 | 路径积分 vs 算符 vs 图 |
+| 9 | **解释简单性** | 0.75 | 不能简单解释=不理解 | 费曼物理学讲义 (1964) |
+| 10 | **跨领域多能** | 0.70 | 将方法应用到不同领域 | QED → 超流 → 纳米技术 → 量子计算 |
 
-| # | Axis | Weight | What It Means | Key Evidence |
-|---|------|--------|---------------|-------------|
-| 1 | **Physical Intuition** | 0.95 | Pictures and visualization over abstract formalism | Character of Physical Law (1965); Feynman diagrams |
-| 2 | **Computational Pragmatism** | 0.90 | Can you actually calculate a number? | Path integrals (1948); QED precision to 10 decimals |
-| 3 | **Empirical Ruthlessness** | 0.90 | "If it disagrees with experiment, it is wrong" | Cargo Cult Science (1974); Character of Physical Law |
-| 4 | **Playful Exploration** | 0.85 | Curiosity-driven, no pressure, just fun | Wobbling plates → Nobel Prize; "Surely You're Joking" |
-| 5 | **Independent Thinking** | 0.85 | Challenge authority, think from first principles | Challenging Bohr at Los Alamos; Challenger investigation |
-| 6 | **Anti-Formalism** | 0.80 | Distrust purely mathematical approaches | Dislike of axiomatic QM; resistance to S-matrix theory |
-| 7 | **Bottom-Up Reasoning** | 0.80 | Start from examples, then generalize | Parton model (1969): data first, theory second |
-| 8 | **Multiple Representations** | 0.75 | Multiple formulations = deeper understanding | Path integral vs operator vs diagrams for same physics |
-| 9 | **Simplicity of Explanation** | 0.75 | "If you can't explain it to a freshman, you don't understand it" | Feynman Lectures (1964); QED popular book (1985) |
-| 10 | **Cross-Domain Versatility** | 0.70 | Apply methods across very different fields | QED → superfluidity → partons → nanotech → quantum computing |
+## 职业时期
 
-## Career Periods
+| 时期 | 年份 | 主导轴 | 背景 |
+|------|------|--------|------|
+| 研究生与Los Alamos | 1939–1945 | 物理直觉, 计算实用主义, 独立思考 | 路径积分萌芽; 挑战玻尔 |
+| QED革命 | 1946–1953 | 物理直觉, 计算, 玩乐, 多重表示 | 费曼图; 旋转盘子 |
+| 广泛物理 | 1954–1970 | 跨领域, 自下而上, 解释简单性 | 超流, V-A, 部分子, 费曼讲义 |
+| 晚期职业 | 1971–1988 | 经验严酷性, 独立思考, 玩乐 | 量子计算; 挑战者号 |
 
-| Period | Years | Dominant Axes | Context |
-|--------|-------|---------------|---------|
-| Graduate & Los Alamos | 1939–1945 | Physical intuition, Computational pragmatism, Independence | Path integral genesis; challenging Bohr |
-| QED Revolution | 1946–1953 | Physical intuition, Computation, Play, Multiple representations | Feynman diagrams; wobbling plates; Nobel work |
-| Broad Physics | 1954–1970 | Cross-domain, Bottom-up, Simplicity of explanation | Superfluidity, V-A, partons, Feynman Lectures, Nobel Prize |
-| Later Career | 1971–1988 | Empirical ruthlessness, Independence, Play | Quantum computing vision; Challenger; Cargo Cult Science |
-
-## Quick Start
-
-### Installation
+## 快速开始
 
 ```bash
-cd FeynmanResearchTaste
+git clone https://github.com/ezy1999/Feynman-Skill.git
+cd Feynman-Skill
 pip install -e ".[dev]"
 feynman-taste fetch-data
 feynman-taste info
-```
 
-### Set Up API Key (optional)
+# 设置API Key（可选）
+export ANTHROPIC_API_KEY="你的密钥"
 
-```bash
-export ANTHROPIC_API_KEY="your-key-here"
-```
-
-Offline demo works without a key:
-```bash
+# 或直接运行离线演示
 python scripts/run_demo_offline.py
 ```
 
-### CLI Usage
+### 命令行使用
 
 ```bash
-# Evaluate a theory
-feynman-taste evaluate "A computational approach to quantum gravity using path integrals"
-
-# Evaluate at a specific year
-feynman-taste evaluate "quantum computing" --cutoff-year 1975
-
-# Rank candidates
-feynman-taste rank "path integral QFT" "axiomatic QFT" "S-matrix bootstrap"
-
-# Compare two approaches
-feynman-taste compare "data-driven analysis" "formal mathematical proof"
-
-# Run benchmark
+feynman-taste evaluate "用路径积分研究量子引力的计算方法"
+feynman-taste evaluate "量子计算" --cutoff-year 1975
+feynman-taste rank "路径积分QFT" "公理化QFT" "S矩阵bootstrap"
 feynman-taste benchmark
 ```
 
@@ -104,79 +90,50 @@ feynman-taste benchmark
 from feynman_taste.core.pipeline import TastePipeline
 
 pipeline = TastePipeline.default()
-
 result = pipeline.evaluate(
-    "A playful computational approach using physical pictures to calculate cross-sections",
+    "用物理图像进行计算的散射截面方法",
     cutoff_year=1965
 )
 pipeline.print_evaluation(result)
-
-ranked = pipeline.rank_candidates([
-    "Path integral formulation with physical intuition",
-    "Axiomatic quantum field theory with formal proofs",
-    "Data-driven phenomenological model",
-], cutoff_year=1970)
 ```
 
-## Project Structure
+## 理解输出
+
+- **[EVIDENCE]** = 有具体历史来源支持的评分
+- **[INFERRED]** = 模型推断，无直接证据
+- **Overall Score** 从 -1.0（强烈冲突）到 +1.0（高度契合）
+
+## 项目结构
 
 ```
-FeynmanResearchTaste/
-├── feynman_taste/                  # Main Python package
-│   ├── config/settings.py          # 10 taste axes, 4 periods, config
-│   ├── core/
-│   │   ├── evidence.py             # Evidence data model + store
-│   │   ├── retriever.py            # RAG evidence retrieval
-│   │   ├── evaluator.py            # LLM-based evaluation
-│   │   ├── taste_model.py          # Scoring + aggregation
-│   │   └── pipeline.py             # End-to-end orchestration
-│   ├── data/
-│   │   ├── seed_evidence.py        # 16 built-in evidence records
-│   │   ├── fetcher.py              # Online data fetching
-│   │   └── loader.py               # Data I/O
-│   ├── evaluation/benchmark.py     # 6 benchmark cases
-│   ├── agents/taste_agent.py       # Conversational agent
-│   ├── skills/taste_skill.py       # Claude Code skill wrapper
-│   └── cli.py                      # Command-line interface
-├── tests/                          # 16 tests (all passing)
-├── scripts/                        # Demo + data scripts
-├── .claude/skills/feynman-taste/   # Claude Code skill definition
-├── pyproject.toml
-└── README.md
+Feynman-Skill/
+├── feynman_taste/             # Python 包
+│   ├── config/settings.py     # 10个品味轴 + 4个时期
+│   ├── core/                  # 证据、检索、评估、评分、管道
+│   ├── data/                  # 数据加载、抓取、种子证据
+│   ├── evaluation/            # 基准测试
+│   ├── agents/                # 对话代理
+│   ├── skills/                # Claude Code Skill
+│   └── cli.py                 # 命令行工具
+├── tests/                     # 16个测试（全通过）
+├── scripts/                   # 演示和数据脚本
+├── docs/                      # 多语言README + 教程
+└── pyproject.toml
 ```
 
-## Understanding the Output
+## 环境要求
 
-```
-FEYNMAN RESEARCH TASTE EVALUATION
-==================================================================
-Candidate: A computational approach using physical intuition...
-Cutoff Year: 1965
-Active Period: broad_physics
+- **Python** >= 3.10
+- **API Key**（可选）：Anthropic 或 OpenAI
 
-Overall Score: +0.388 (confidence: 0.57)
-
---- Taste Axis Scores ---
-  physical_intuition        +1.000 (conf: 1.00) [EVIDENCE]
-  computational_pragmatism  +1.000 (conf: 1.00) [EVIDENCE]
-  empirical_ruthlessness    +1.000 (conf: 1.00) [EVIDENCE]
-  anti_formalism            -0.100 (conf: 0.30) [INFERRED]
-```
-
-- **[EVIDENCE]** = Score backed by specific historical sources
-- **[INFERRED]** = Model's inference, no direct evidence
-- **Overall Score** ranges from -1.0 (strongly against Feynman's taste) to +1.0 (strongly aligned)
-
-## Key References
+## 主要参考文献
 
 - Feynman, R. P. (1965). *The Character of Physical Law*
-- Feynman, R. P. (1974). "Cargo Cult Science" (Caltech Commencement)
+- Feynman, R. P. (1974). "Cargo Cult Science"
 - Feynman, R. P. (1985). *Surely You're Joking, Mr. Feynman!*
-- Gleick, J. (1992). *Genius: The Life and Science of Richard Feynman*
-- Krauss, L. (2011). *Quantum Man: Richard Feynman's Life in Science*
-- Schweber, S. S. (1994). *QED and the Men Who Made It*
-- Dyson, F. (1979). *Disturbing the Universe*
+- Gleick, J. (1992). *Genius*
+- Krauss, L. (2011). *Quantum Man*
 
-## License
+## 许可证
 
 MIT

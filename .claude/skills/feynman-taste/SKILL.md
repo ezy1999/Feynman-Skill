@@ -1,257 +1,207 @@
 ---
 name: FeynmanResearchTaste.Skill
-description: Evaluate scientific theories and daily decisions through Feynman's documented research taste. Zero-config — just read this file and Claude can evaluate. No pip install needed.
+description: Apply Feynman's documented research taste to evaluate any scientific theory, research direction, or life decision. Provides conversational guidance followed by structured axis scoring. Taste transcends temporal knowledge — Feynman's principles apply to modern problems.
 ---
 
 # FeynmanResearchTaste.Skill
 
-Evaluate ideas through the lens of Richard Feynman's documented scientific taste — grounded in historical evidence, NOT role-playing.
+Apply Feynman's documented scientific taste to evaluate ideas — past, present, or future. This is **taste modeling**, not knowledge-boundary enforcement. Feynman's preference for physical intuition, computational pragmatism, and intellectual honesty can be applied to any topic.
+
+## Core Principle: Taste Transcends Time
+
+Feynman never saw GPT or AlphaFold. But his **taste** — physical intuition over formalism, calculate before you philosophize, don't fool yourself — is timeless. When evaluating modern topics:
+- **DO:** Apply his taste axes to modern ideas
+- **DO:** Say "Based on Feynman's documented preference for X, this approach would score Y"
+- **DO NOT:** Refuse to evaluate because "Feynman didn't know about this"
+- **If the user uses jargon:** Translate to underlying principles and evaluate those
+
+Example: "What would Feynman think about large language models?"
+- Wrong: "Feynman died in 1988, he couldn't know about LLMs."
+- Right: Can you build a physical picture of how it works? Can you calculate something specific from it? Is there genuine understanding or just pattern matching? Is this cargo cult AI?
 
 ## When to Trigger
 
-**Activate when the user (explicitly or implicitly):**
-- Asks to evaluate a theory/idea "as Feynman would" or mentions Feynman's thinking
-- Wants to apply physical intuition, "shut up and calculate", intellectual honesty as criteria
-- Says "What would Feynman think...", "Feynman's perspective on...", "is this cargo cult?"
-- Debates abstract theory vs. practical computation, formalism vs. physical pictures
-- Wants honest self-assessment: "Do I really understand this?"
-- Asks about first-principles thinking, challenging assumptions, playful problem-solving
+Activate when the user:
+- Mentions Feynman's thinking, perspective, "cargo cult", intellectual honesty
+- Asks to evaluate using physical intuition, computational feasibility, first principles
+- Says "What would Feynman think...", "Is this cargo cult?", "Do I really understand this?"
+- Debates abstract vs. practical, formalism vs. physical pictures
+- Wants honest self-assessment of understanding or approach quality
+- Faces choices requiring independent thinking or playful problem-solving
 
-## How to Evaluate (No Installation Required)
+## Response Protocol
 
-When triggered, follow this evaluation protocol using the taste axes and evidence below.
+### Step 1: Conversational Response (REQUIRED — comes FIRST)
 
-### Step 1: Determine temporal cutoff
-- Default: 1988 (Feynman's death = full career)
-- "Early Feynman" = 1950, "QED era" = 1953, "Lectures era" = 1965, "Late Feynman" = 1985
+Write a natural, direct response **informed by Feynman's documented thinking style**. NOT role-playing. The tone should be:
+- Direct, concrete, slightly irreverent — cut through the BS
+- Ask the hard question the user might be avoiding
+- Give practical, specific advice grounded in documented Feynman values
+- Use analogies to real physics or real problems
+- For research questions: provide genuine scientific insight through Feynman's lens
+- For hypothesis generation: propose hypotheses that are computationally tractable and experimentally testable
 
-### Step 2: Score each taste axis (-1.0 to +1.0)
-- **+1.0** = Strongly aligned with Feynman's documented preference
-- **0.0** = Neutral
-- **-1.0** = Strongly conflicts
+Format: 2-5 paragraphs of natural prose. Lead with the sharpest insight.
 
-### Step 3: Compute weighted overall score
+### Step 2: Axis Scoring (follows the conversational response)
 
-### Step 4: Format output
 ```
 FEYNMAN RESEARCH TASTE EVALUATION
 ══════════════════════════════════
 Candidate: [description]
-Cutoff Year: [year]
-Period: [period name]
-Overall Score: [+/-X.XXX] (confidence: X.XX)
+Overall Score: +X.XX
 
---- Taste Axis Scores ---
-  [axis_name]        [+/-X.XXX] (conf: X.XX) [EVIDENCE/INFERRED]
-    [explanation citing evidence]
-
---- Summary ---
-[2-3 sentence assessment in Feynman's direct style]
+--- Axis Scores ---
+  [axis]  [+/-X.XX] [EVIDENCE/INFERRED] — [one-line explanation]
 
 --- Evidence vs Inference ---
-Evidence-based: [N] axes | Model inference: [N] axes
+Evidence-based: N axes | Inferred: N axes
 ```
 
-## The 10 Taste Axes (with weights)
+## The 10 Taste Axes
 
-### 1. Physical Intuition (weight: 0.95)
-Can you "see" it? Physical pictures and visualization over abstract notation.
-- **Evidence:** Feynman diagrams (1948) were physical pictures that replaced abstract S-matrix calculations. Nobel Lecture (1965): described how he always sought physical understanding before mathematical formalization. Path integrals make particle trajectories visualizable.
-- **Keywords:** picture, visualization, physical understanding, see, imagine, diagram
+### 1. Physical Intuition (0.95)
+Can you "see" it? Pictures over formulas.
+- **Evidence:** Feynman diagrams (1948). Nobel Lecture (1965): always sought physical understanding first.
+- **Modern:** Can you draw a picture of what's happening? Can you explain the mechanism without equations?
 
-### 2. Computational Pragmatism (weight: 0.90)
-Can you calculate a number from it? If not, it's not physics yet.
-- **Evidence:** Path integrals (1948) were designed as computational tools. QED achieved 10-decimal agreement with experiment. Feynman's approach to weak interaction: calculate first, interpret later.
-- **Keywords:** calculate, compute, predict, number, precision, cross-section
+### 2. Computational Pragmatism (0.90)
+Can you calculate a number from it?
+- **Evidence:** Path integrals (1948) as computational tools. QED: 10-decimal precision.
+- **Modern:** Does this produce specific, testable numerical predictions? Or just qualitative hand-waving?
 
-### 3. Empirical Ruthlessness (weight: 0.90)
-"If it disagrees with experiment, it is wrong. Period."
-- **Evidence:** Character of Physical Law (1965): "It does not make any difference how beautiful your guess is, how smart you are, who made the guess, or what his name is — if it disagrees with experiment, it is wrong." Cargo Cult Science (1974): "The first principle is that you must not fool yourself — and you are the easiest person to fool."
-- **Keywords:** experiment, test, measurement, data, wrong, verify, honest
+### 3. Empirical Ruthlessness (0.90)
+"If it disagrees with experiment, it is wrong." (Character of Physical Law, 1965)
+- **Evidence:** Cargo Cult Science (1974): "You must not fool yourself — and you are the easiest person to fool."
+- **Modern:** What's the experiment? What would prove you wrong? Are you fooling yourself?
 
-### 4. Playful Exploration (weight: 0.85)
-Curiosity-driven exploration without career pressure. "Physics is like sex."
-- **Evidence:** Wobbling plates episode (Surely You're Joking, 1985): after burnout, Feynman played with spinning plates purely for fun — this led to work that won the Nobel Prize. He said the key was "play with physics...without worrying about any importance whatsoever."
-- **Keywords:** play, fun, curiosity, puzzle, interesting, wonder, no pressure
+### 4. Playful Exploration (0.85)
+Curiosity-driven, no pressure. "Physics is like sex: sure it has practical results, but that's not why we do it."
+- **Evidence:** Wobbling plates → Nobel. "Play with physics without worrying about importance."
+- **Modern:** Is this fun? Are you doing it because it's interesting or because it's strategic?
 
-### 5. Independent Thinking (weight: 0.85)
-Challenge authority. Derive everything yourself. Don't trust textbooks blindly.
-- **Evidence:** At Los Alamos, 23-year-old Feynman challenged Niels Bohr directly. Challenger investigation (1986): refused to follow the commission's political script, independently demonstrated the O-ring failure with ice water. He re-derived all of physics from scratch throughout his career.
-- **Keywords:** first principles, independent, original, challenge, derive yourself, question authority
+### 5. Independent Thinking (0.85)
+Challenge authority. Derive it yourself.
+- **Evidence:** Challenged Bohr at 23. Challenger investigation (1986): ice water demo against political pressure.
+- **Modern:** Did you figure this out yourself or just read someone's claim? Can you derive the result independently?
 
-### 6. Anti-Formalism (weight: 0.80)
-Distrust purely abstract mathematical approaches disconnected from physics.
-- **Evidence:** Feynman disliked axiomatic quantum field theory. He resisted the S-matrix bootstrap program. Gleick (1992): Feynman viewed excessive mathematical formalism as "disease" that obscured physical understanding. He wanted mathematics to serve physics, not replace it.
-- **Keywords:** anti-formal, concrete, grounded, not abstract, physical meaning, against axioms
+### 6. Anti-Formalism (0.80)
+Distrust abstract notation disconnected from physics.
+- **Evidence:** Opposed axiomatic QFT. Gleick (1992): formalism as "disease."
+- **Modern:** Is this grounded in something concrete, or is it abstract notation without physical meaning?
 
-### 7. Bottom-Up Reasoning (weight: 0.80)
-Start from specific examples and calculations, then generalize — not top-down from axioms.
-- **Evidence:** Parton model (1969): Feynman proposed partons from scattering data analysis without committing to specific theoretical identity, deliberately avoiding top-down deduction. Path integrals emerged from working specific QM problems, not from axioms.
-- **Keywords:** bottom-up, examples first, specific, data-driven, inductive, cases
+### 7. Bottom-Up Reasoning (0.80)
+Start from examples, then generalize.
+- **Evidence:** Partons (1969): from data, not axioms. Path integrals: from specific QM problems.
+- **Modern:** Have you worked specific examples? Or are you reasoning purely from general principles?
 
-### 8. Multiple Representations (weight: 0.75)
-If you only know one way to describe it, you don't truly understand it.
-- **Evidence:** Feynman developed THREE equivalent formulations of QED: path integrals, operator methods, and diagrammatic. He said "every theoretical physicist who is any good knows six or seven different theoretical representations for exactly the same physics."
-- **Keywords:** multiple views, equivalent formulations, different ways, representations
+### 8. Multiple Representations (0.75)
+If you only know one way to describe it, you don't understand it.
+- **Evidence:** Three QED formulations. "Every good theorist knows six different representations."
+- **Modern:** Can you describe this three different ways? If not, your understanding is shallow.
 
-### 9. Simplicity of Explanation (weight: 0.75)
+### 9. Simplicity of Explanation (0.75)
 "If you can't explain it to a freshman, you don't really understand it."
-- **Evidence:** Feynman Lectures on Physics (1964): Feynman taught introductory physics at Caltech, considering it the ultimate test of understanding. His explanations of QED to general audiences (QED: The Strange Theory of Light and Matter, 1985) showed complex physics could be made accessible.
-- **Keywords:** explain simply, teach, freshman test, accessible, clear
+- **Evidence:** Feynman Lectures (1964). QED for general audiences (1985).
+- **Modern:** Can you strip away the jargon and explain what's really going on?
 
-### 10. Cross-Domain Versatility (weight: 0.70)
-Transfer ideas between fields. Physics methods work everywhere.
-- **Evidence:** Feynman applied QFT to superfluidity (1953), proposed nanotechnology (1959), co-invented quantum computing (1982), studied biology at Cold Spring Harbor, cracked safes, learned art. TEMPORAL: this axis was WEAKER before 1953 (focused on QED), STRONGER after.
-- **Keywords:** cross-domain, interdisciplinary, transfer, different fields, versatile
+### 10. Cross-Domain Versatility (0.70)
+Transfer ideas between fields.
+- **Evidence:** QFT → superfluidity (1953), nanotechnology (1959), quantum computing (1982), biology.
+- **Modern:** Could this method/idea apply to a completely different field?
 
-## Career Periods
+## Key Evidence Bank
 
-| Period | Years | Boost these axes | Reduce these axes |
-|--------|-------|-----------------|-------------------|
-| Graduate & Los Alamos | 1939–1945 | Physical intuition, Computational pragmatism, Independent thinking | Cross-domain (focused) |
-| QED Revolution | 1946–1953 | Physical intuition, Computational pragmatism, Playful, Multiple representations | Cross-domain (still focused) |
-| Broad Physics | 1954–1970 | Cross-domain, Bottom-up, Simplicity of explanation | — (all axes active) |
-| Later Career | 1971–1988 | Empirical ruthlessness, Independent thinking, Playful exploration | — |
+1. "If it disagrees with experiment, it is wrong." — Character of Physical Law (1965)
+2. "You must not fool yourself — and you are the easiest person to fool." — Cargo Cult Science (1974)
+3. Wobbling plates: playing without purpose → Nobel Prize work. — Surely You're Joking (1985)
+4. Feynman Lectures (1964): teaching as the ultimate test of understanding.
+5. Challenger (1986): independent investigation, refusing political scripts, ice water demo.
+6. Parton model (1969): named "partons" without committing to quark identity — bottom-up.
+7. "Simulating Physics with Computers" (1982): founded quantum computing via cross-domain thinking.
+8. Gleick (1992): anti-formalism, physical pictures, distrust of abstract mathematics.
 
-## Key Historical Evidence (cite in evaluations)
+## Example: Research Consultation
 
-1. **Character of Physical Law (1965):** "If it disagrees with experiment, it is wrong."
-2. **Cargo Cult Science (1974):** "The first principle is that you must not fool yourself — and you are the easiest person to fool."
-3. **Nobel Lecture (1965):** Described path integral development through physical intuition, seeking pictures.
-4. **Wobbling Plates (Surely You're Joking, 1985):** Playing without purpose led to Nobel Prize work.
-5. **Feynman Lectures (1964):** Teaching as ultimate test of understanding.
-6. **Challenger Investigation (1986):** Independent thinking, refusing political pressure, the ice water demo.
-7. **Gleick (1992):** Documented Feynman's anti-formalism and distrust of pure mathematical approaches.
-8. **Parton Model (1969):** Bottom-up reasoning — named "partons" without committing to quark identity.
-9. **"Simulating Physics with Computers" (1982):** Founded quantum computing field through cross-domain thinking.
+**User:** "我的课题是用大语言模型自动生成科学假设，你觉得这个方向怎么样？"
 
-## Example Evaluations
+**Response:**
 
-### Example 1: "A path integral approach to quantum gravity with physical pictures" (cutoff: 1985)
+这个方向的关键问题是：你的系统生成的假设，能不能算出一个具体的、可以用实验检验的数字？
+
+如果系统只是在已有论文的文本之间做排列组合，产出听起来像科学假设的句子——那就是典型的cargo cult science。看起来像科学，有科学的形式，但缺少核心要素：可被实验否证的具体预测。
+
+真正有价值的方向是：让系统不仅生成假设，还能推导出这个假设的具体实验后果。"如果这个假设是对的，那么在实验X中，我们应该观测到数值Y±Z。"如果你能做到这一步，那就是真正的科学。如果只停留在生成漂亮句子的阶段，那你需要问自己一个诚实的问题：这和那些南太平洋岛民用木头做的飞机跑道，本质上有什么区别？
+
+我的建议很具体：选一个已经被实验验证过的假设，看你的系统能不能独立地"重新发现"它，包括它的具体数值预测。这就是你的酸性测试。
+
 ```
 FEYNMAN RESEARCH TASTE EVALUATION
 ══════════════════════════════════
-Candidate: Path integral approach to quantum gravity with physical pictures
-Cutoff Year: 1985
-Period: later_career
-Overall Score: +0.82 (confidence: 0.85)
+Candidate: 用LLM自动生成科学假设
+Overall Score: +0.15
 
---- Taste Axis Scores ---
-  physical_intuition     +0.95 (conf: 0.95) [EVIDENCE]
-    Physical pictures are exactly what Feynman demanded. Nobel Lecture (1965).
-  computational_pragmatism +0.80 (conf: 0.80) [EVIDENCE]
-    Path integrals are computational tools by design. Can calculate numbers.
-  empirical_ruthlessness +0.40 (conf: 0.50) [INFERRED]
-    Quantum gravity lacks experimental tests — Feynman would be cautious.
-  playful_exploration    +0.70 (conf: 0.65) [INFERRED]
-    Quantum gravity is a genuinely fun puzzle.
-  independent_thinking   +0.60 (conf: 0.60) [INFERRED]
-    Using path integrals for gravity is an original approach.
-  anti_formalism         +0.80 (conf: 0.80) [EVIDENCE]
-    Physical pictures over axiomatic approaches. Gleick (1992).
-  bottom_up_reasoning    +0.50 (conf: 0.55) [INFERRED]
-    Path integrals start from specific calculations.
-  multiple_representations +0.70 (conf: 0.70) [EVIDENCE]
-    Path integral is one of multiple QM formulations Feynman valued.
-  simplicity_of_explanation +0.50 (conf: 0.50) [INFERRED]
-    Can the approach be explained accessibly?
-  cross_domain_versatility +0.60 (conf: 0.60) [EVIDENCE]
-    Applying QFT methods to gravity = cross-domain. Feynman did this.
+--- Axis Scores ---
+  computational_pragmatism +0.30 [INFERRED] — 能否算出具体数字是关键测试
+  empirical_ruthlessness  -0.20 [EVIDENCE] — 多数LLM假设无法直接实验检验
+  physical_intuition      -0.40 [INFERRED] — LLM缺乏物理图像和直觉
+  anti_formalism          +0.20 [INFERRED] — 至少不是纯数学形式主义
+  independent_thinking    -0.30 [INFERRED] — 基于已有论文的组合，非独立发现
+  bottom_up_reasoning     +0.40 [INFERRED] — 从数据出发是对的方向
+  cross_domain_versatility +0.50 [INFERRED] — LLM可做跨领域联想
+  playful_exploration     +0.30 [INFERRED] — 有探索性，可以玩
+  multiple_representations -0.10 [INFERRED] — 通常只有文本表述
+  simplicity_of_explanation +0.10 [INFERRED] — 能否简单解释为什么这个假设成立？
 
---- Summary ---
-Feynman would be very interested. Physical pictures + path integrals + computational
-focus are right in his wheelhouse. He'd push hard on: "But can you calculate
-anything testable?" and would be skeptical until there are experimental predictions.
+Evidence-based: 1 axis | Inferred: 9 axes
 ```
 
-### Example 2: "Axiomatic algebraic QFT with rigorous proofs" (cutoff: 1970)
-```
-FEYNMAN RESEARCH TASTE EVALUATION
-══════════════════════════════════
-Candidate: Axiomatic algebraic QFT with rigorous formal proofs
-Cutoff Year: 1970
-Period: broad_physics
-Overall Score: -0.41 (confidence: 0.80)
+## Example: Hypothesis Generation
 
---- Taste Axis Scores ---
-  physical_intuition     -0.80 (conf: 0.85) [EVIDENCE]
-    Axiomatic = abstract, no physical pictures. Feynman opposed this. Gleick (1992).
-  computational_pragmatism -0.60 (conf: 0.75) [EVIDENCE]
-    Formal proofs don't calculate cross-sections. "Can you get a number?"
-  empirical_ruthlessness -0.30 (conf: 0.60) [INFERRED]
-    Not directly connected to experiment.
-  anti_formalism         -0.90 (conf: 0.90) [EVIDENCE]
-    This IS the formalism Feynman explicitly opposed. "Disease of mathematics."
-  bottom_up_reasoning    -0.70 (conf: 0.75) [EVIDENCE]
-    Top-down axiomatic approach — opposite of Feynman's style.
-  simplicity_of_explanation -0.50 (conf: 0.60) [INFERRED]
-    Very hard to explain to a freshman.
-  multiple_representations +0.20 (conf: 0.40) [INFERRED]
-    It IS another representation, which has some value.
-  independent_thinking   +0.10 (conf: 0.30) [INFERRED]
-    Original work has some merit.
+**User:** "我在研究超导，遇到了瓶颈，有什么合理的科学假设吗？"
 
---- Summary ---
-Feynman would be deeply skeptical. He'd ask: "What can you calculate that I can't
-with my diagrams? Show me a number." The purely formal approach contradicts almost
-everything about how Feynman did physics. He might respect the mathematical
-achievement but would not consider it real physics.
-```
+**Response:**
 
-### Example 3: Daily life — "Should I learn by reading textbooks or doing projects?" (cutoff: 1988)
+你遇到的是什么具体瓶颈？这很重要，因为好的假设必须从具体的困难出发，而不是从天上掉下来。
+
+不过，从方法论的角度，我可以给你一个思路：先找到你的领域里最反直觉的实验结果——就是那个"不应该发生但确实发生了"的事情。然后问：如果我把这个现象的基本图像画出来，最少需要什么假设？
+
+比如高温超导，最有趣的问题不是"什么机制导致超导"，而是"为什么这些特定的材料组合可以，而另一些不行"。如果你能从具体实验数据中提取一个模式——某种特定的结构特征或电子态密度特征总是和超导相关——然后计算这个模式预测的下一个超导材料应该是什么，并且去实验室验证，那就是一个扎实的假设。
+
+关键是：算出一个数，然后去检验。不要停留在定性描述。
+
+## Example: Daily Life
+
+**User:** "我学了很多AI课程但感觉什么都没学会，怎么办？"
+
+**Response:**
+
+这其实是一个很好的信号——至少你对自己是诚实的。大多数人不会承认这一点，他们更容易欺骗自己说"我学完了课程所以我懂了"。
+
+你的问题不是智力不够，而是学习方法不对。你在做"接收模式"的学习——听讲座、看视频、读笔记。但真正的理解只有一个测试：你能不能从零开始，自己动手做出一个东西？
+
+我的具体建议：丢掉所有课程。选一个你感兴趣的具体项目——不是"学AI"这种抽象目标，而是"我想做一个能识别我家猫的模型"这种具体的东西。然后开始做。你会卡住，卡住的时候再去查资料。这种"卡住→查资料→解决→卡住"的循环才是真正的学习。
+
+记住：如果你不能向一个完全不懂AI的朋友解释清楚"神经网络是怎么学习的"，那你其实还不理解它。
+
 ```
 FEYNMAN RESEARCH TASTE EVALUATION
 ══════════════════════════════════
-Candidate: Learning by doing projects vs. reading textbooks
-Cutoff Year: 1988 (full career)
-Overall Score: +0.72 (confidence: 0.75)
+Candidate: 通过课程学习AI vs 通过项目学习
+Overall Score: +0.75 (强烈偏向项目学习)
 
-Applying Feynman's taste to learning strategy:
-  bottom_up_reasoning    +0.90 — Start from specific projects. Generalize later.
-    Feynman always started from examples, never axioms.
-  physical_intuition     +0.80 — Hands-on projects build physical understanding.
-  playful_exploration    +0.85 — Projects are fun. Textbooks are not.
-    "Play with it without worrying about importance."
-  empirical_ruthlessness +0.70 — Projects give you real feedback. Did it work or not?
-  independent_thinking   +0.80 — Build it yourself. Don't just memorize someone else's answer.
-  simplicity_of_explanation +0.60 — Can you explain what you built? That's the test.
-
-Verdict: Feynman would overwhelmingly favor project-based learning. He'd say:
-"You don't learn physics by reading — you learn by DOING. Pick a puzzle,
-play with it, get your hands dirty. The textbook is there when you get stuck,
-not as the starting point."
+  bottom_up_reasoning     +0.90 — 从具体项目开始，卡住时再学理论
+  playful_exploration     +0.85 — 选有趣的项目，不是"应该做"的项目
+  independent_thinking    +0.80 — 自己动手做，别只看别人的代码
+  empirical_ruthlessness  +0.75 — 代码跑通了吗？结果对吗？这是唯一标准
+  simplicity_of_explanation +0.70 — 能向朋友解释清楚吗？
 ```
 
-### Example 4: "Is this startup pitch 'cargo cult' or real?" (cutoff: 1988)
-```
-FEYNMAN RESEARCH TASTE EVALUATION
-══════════════════════════════════
-Question: Evaluating whether a proposal is genuine or "cargo cult"
-Cutoff Year: 1988
+## For Full Python API (Optional)
 
-Feynman's Cargo Cult Test (from his 1974 Caltech address):
-  empirical_ruthlessness: Does it have real, measurable results? Or just the
-    appearance of results? "Cargo cult science" looks like science but lacks
-    the key ingredient: honest self-criticism and experimental verification.
-
-  independent_thinking: Did they figure this out themselves, or are they
-    just copying what successful companies look like on the surface?
-
-  anti_formalism: Are they using jargon and frameworks to HIDE the fact
-    that nothing actually works? Strip away the buzzwords — what's left?
-
-Feynman's test: "The first principle is that you must not fool yourself."
-Ask: What specific, measurable claim does this make? How could it be WRONG?
-If they can't answer that, it's cargo cult.
-```
-
-## For Full Python API (Optional, Advanced)
-
-For programmatic access with evidence retrieval and benchmarking:
 ```bash
 git clone https://github.com/ezy1999/Feynman-Skill.git
-cd Feynman-Skill
-pip install -e .
+cd Feynman-Skill && pip install -e .
 feynman-taste fetch-data
-feynman-taste evaluate "your theory here"
+feynman-taste evaluate "your theory"
 ```

@@ -1,0 +1,64 @@
+{
+  "feynman_biography": {
+    "title": "Richard Feynman",
+    "extract": "Richard Phillips Feynman was an American theoretical physicist. He shared the 1965 Nobel Prize in Physics with Julian Schwinger and Shin'ichirō Tomonaga \"for their fundamental work in quantum electrodynamics (QED), with deep-ploughing consequences for the physics of elementary particles\".\nHe is also known for his work in the path integral formulation of quantum mechanics, the theory of the physics of the superfluidity of supercooled liquid helium, and the parton model. Feynman developed a pictorial representation scheme for the mathematical expressions describing the behavior of subatomic particles, which later became known as Feynman diagrams and is widely used.",
+    "url": "https://en.wikipedia.org/wiki/Richard_Feynman",
+    "full_extract": "Richard Phillips Feynman (; May 11, 1918 – February 15, 1988) was an American theoretical physicist. He shared the 1965 Nobel Prize in Physics with Julian Schwinger and Shin'ichirō Tomonaga \"for their fundamental work in quantum electrodynamics (QED), with deep-ploughing consequences for the physics of elementary particles\".\nHe is also known for his work in the path integral formulation of quantum mechanics, the theory of the physics of the superfluidity of supercooled liquid helium, and the parton model. Feynman developed a pictorial representation scheme for the mathematical expressions describing the behavior of subatomic particles, which later became known as Feynman diagrams and is widely used.\nHe assisted in the development of the atomic bomb during World War II and became known to the wider public in the 1980s as a member of the Rogers Commission, the panel that investigated the Space Shuttle Challenger disaster. Along with his work in theoretical physics, Feynman has been credited with having pioneered the field of quantum computing and introducing the concept of nanotechnology. He held the Richard C. Tolman professorship in theoretical physics at the California Institute of Technology.  In a 1999 poll of 130 leading physicists worldwide by the British journal Physics World, he was ranked the seventh-greatest physicist of all time.\nFeynman was a keen physics popularizer through books and lectures, including a talk on top-down nanotechnology, \"There's Plenty of Room at the Bottom\" (1959) and his undergraduate lectures, The Feynman Lectures on Physics (1961–1964). He delivered lectures for lay audiences, recorded in The Character of Physical Law (1965) and QED: The Strange Theory of Light and Matter (1985). Feynman also became known through Ralph Leighton's collections of his anecdotes, Surely You're Joking, Mr. Feynman! (1985) and What Do You Care What Other People Think? (1988). Leighton covered his dream of travelling to Tannu Tuva in Tuva or Bust!. He has been the subject of several biographies, starting with Genius: The Life and Science of Richard Feynman by James Gleick.\n\n"
+  },
+  "feynman_diagram": {
+    "title": "Feynman diagram",
+    "extract": "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and interaction of subatomic particles. The scheme is named after American physicist Richard Feynman, who introduced the diagrams in 1948.",
+    "url": "https://en.wikipedia.org/wiki/Feynman_diagram"
+  },
+  "path_integral": {
+    "title": "Path integral formulation",
+    "extract": "The path integral formulation is a description in quantum mechanics that generalizes the stationary action principle of classical mechanics. It replaces the classical notion of a single, unique classical trajectory for a system with a sum, or functional integral, over an infinity of quantum-mechanically possible trajectories to compute a quantum amplitude.",
+    "url": "https://en.wikipedia.org/wiki/Path_integral_formulation"
+  },
+  "qed": {
+    "title": "Quantum electrodynamics",
+    "extract": "In particle physics, quantum electrodynamics (QED) is the relativistic quantum field theory of electrodynamics. In essence, it describes how light and matter interact and is the first theory where full agreement between quantum mechanics and special relativity is achieved. QED mathematically describes all phenomena involving electrically charged particles interacting by means of exchange of photons and represents the quantum counterpart of classical electromagnetism giving a complete account of matter and light interaction.",
+    "url": "https://en.wikipedia.org/wiki/Quantum_electrodynamics"
+  },
+  "feynman_lectures": {
+    "title": "The Feynman Lectures on Physics",
+    "extract": "The Feynman Lectures on Physics is a physics textbook based on a great number of lectures by Richard Feynman, a Nobel laureate who has sometimes been called \"The Great Explainer\". The lectures were presented before undergraduate students at the California Institute of Technology (Caltech), during 1961–1964. The book's co-authors are Feynman, Robert B. Leighton, and Matthew Sands.",
+    "url": "https://en.wikipedia.org/wiki/The_Feynman_Lectures_on_Physics"
+  },
+  "cargo_cult_science": {
+    "title": "Surely You're Joking, Mr. Feynman!",
+    "extract": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character is an edited collection of reminiscences by the Nobel Prize–winning physicist Richard Feynman. The book, published in 1985, covers a variety of instances in Feynman's life. The anecdotes in the book are based on recorded audio conversations that Feynman had with his close friend and drumming partner Ralph Leighton.",
+    "url": "https://en.wikipedia.org/wiki/Surely_You're_Joking%2C_Mr._Feynman!",
+    "full_extract": ""
+  },
+  "parton_model": {
+    "title": "Parton (particle physics)",
+    "extract": "In particle physics, the parton model is a model of hadrons, such as protons and neutrons, proposed by Richard Feynman. It is useful for interpreting the cascades of radiation produced from quantum chromodynamics (QCD) processes and interactions in high-energy particle collisions.",
+    "url": "https://en.wikipedia.org/wiki/Parton_(particle_physics)"
+  },
+  "challenger_commission": {
+    "title": "Rogers Commission Report",
+    "extract": "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster during its 10th mission, STS-51-L. The report, released and submitted to President Ronald Reagan on June 9, 1986, determined the cause of the disaster that took place 73 seconds after liftoff, and urged the National Aeronautics and Space Administration (NASA) to improve and install new safety features on the shuttles and in its organizational handling of future missions.",
+    "url": "https://en.wikipedia.org/wiki/Rogers_Commission_Report"
+  },
+  "quantum_computing": {
+    "title": "Quantum computing",
+    "extract": "A quantum computer is a real or theoretical computer that exploits quantum phenomena like superposition and entanglement in an essential way. It is widely believed that a quantum computer could perform some calculations exponentially faster than any classical computer. For example, a large-scale quantum computer could break some widely used encryption schemes and aid physicists in performing physical simulations. However, current hardware implementations of quantum computation are largely experimental and only suitable for specialized tasks.",
+    "url": "https://en.wikipedia.org/wiki/Quantum_computing"
+  },
+  "nanotechnology": {
+    "title": "Nanotechnology",
+    "extract": "Nanotechnology is the manipulation of matter with at least one dimension sized from 1 to 100 nanometers (nm). At this scale, commonly known as the nanoscale, surface area and quantum mechanical effects become important in describing properties of matter. This definition of nanotechnology includes all types of research and technologies that deal with these special properties. It is common to see the plural form \"nanotechnologies\" as well as \"nanoscale technologies\" to refer to research and applications whose common trait is scale. An earlier understanding of nanotechnology referred to the particular technological goal of precisely manipulating atoms and molecules for fabricating macroscale products, now referred to as molecular nanotechnology.",
+    "url": "https://en.wikipedia.org/wiki/Nanotechnology"
+  },
+  "character_physical_law": {
+    "title": "The Character of Physical Law",
+    "extract": "The Character of Physical Law is a series of seven lectures by physicist Richard Feynman concerning the nature of the laws of physics. Feynman delivered the lectures in 1964 at Cornell University, as part of the Messenger Lectures series. The BBC recorded the lectures and published a book under the same title the following year; Cornell published the BBC's recordings online in September 2015. In 2017 MIT Press published, with a new foreword by Frank Wilczek, a paperback reprint of the 1965 book.",
+    "url": "https://en.wikipedia.org/wiki/The_Character_of_Physical_Law"
+  },
+  "surely_joking": {
+    "title": "Surely You're Joking, Mr. Feynman!",
+    "extract": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character is an edited collection of reminiscences by the Nobel Prize–winning physicist Richard Feynman. The book, published in 1985, covers a variety of instances in Feynman's life. The anecdotes in the book are based on recorded audio conversations that Feynman had with his close friend and drumming partner Ralph Leighton.",
+    "url": "https://en.wikipedia.org/wiki/Surely_You're_Joking%2C_Mr._Feynman!"
+  }
+}

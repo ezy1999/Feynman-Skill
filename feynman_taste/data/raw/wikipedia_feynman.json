@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Richard Feynman",
+    "extract": "Richard Phillips Feynman was an American theoretical physicist. He shared the 1965 Nobel Prize in Physics with Julian Schwinger and Shin'ichirō Tomonaga \"for their fundamental work in quantum electrodynamics (QED), with deep-ploughing consequences for the physics of elementary particles\".\nHe is also known for his work in the path integral formulation of quantum mechanics, the theory of the physics of the superfluidity of supercooled liquid helium, and the parton model. Feynman developed a pictorial representation scheme for the mathematical expressions describing the behavior of subatomic particles, which later became known as Feynman diagrams and is widely used.",
+    "description": "American theoretical physicist (1918–1988)"
+  },
+  {
+    "title": "Feynman diagram",
+    "extract": "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and interaction of subatomic particles. The scheme is named after American physicist Richard Feynman, who introduced the diagrams in 1948.",
+    "description": "Pictorial representation of the behavior of subatomic particles"
+  },
+  {
+    "title": "Path integral formulation",
+    "extract": "The path integral formulation is a description in quantum mechanics that generalizes the stationary action principle of classical mechanics. It replaces the classical notion of a single, unique classical trajectory for a system with a sum, or functional integral, over an infinity of quantum-mechanically possible trajectories to compute a quantum amplitude.",
+    "description": "Formulation of quantum mechanics"
+  },
+  {
+    "title": "Quantum electrodynamics",
+    "extract": "In particle physics, quantum electrodynamics (QED) is the relativistic quantum field theory of electrodynamics. In essence, it describes how light and matter interact and is the first theory where full agreement between quantum mechanics and special relativity is achieved. QED mathematically describes all phenomena involving electrically charged particles interacting by means of exchange of photons and represents the quantum counterpart of classical electromagnetism giving a complete account of matter and light interaction.",
+    "description": "Quantum field theory of electromagnetism"
+  },
+  {
+    "title": "Parton (particle physics)",
+    "extract": "In particle physics, the parton model is a model of hadrons, such as protons and neutrons, proposed by Richard Feynman. It is useful for interpreting the cascades of radiation produced from quantum chromodynamics (QCD) processes and interactions in high-energy particle collisions.",
+    "description": "Model of hadrons"
+  },
+  {
+    "title": "The Feynman Lectures on Physics",
+    "extract": "The Feynman Lectures on Physics is a physics textbook based on a great number of lectures by Richard Feynman, a Nobel laureate who has sometimes been called \"The Great Explainer\". The lectures were presented before undergraduate students at the California Institute of Technology (Caltech), during 1961–1964. The book's co-authors are Feynman, Robert B. Leighton, and Matthew Sands.",
+    "description": "Textbook by Richard Feynman"
+  },
+  {
+    "title": "Surely You're Joking, Mr. Feynman!",
+    "extract": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character is an edited collection of reminiscences by the Nobel Prize–winning physicist Richard Feynman. The book, published in 1985, covers a variety of instances in Feynman's life. The anecdotes in the book are based on recorded audio conversations that Feynman had with his close friend and drumming partner Ralph Leighton.",
+    "description": "1985 book of stories about Richard Feynman"
+  },
+  {
+    "title": "Rogers Commission Report",
+    "extract": "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster during its 10th mission, STS-51-L. The report, released and submitted to President Ronald Reagan on June 9, 1986, determined the cause of the disaster that took place 73 seconds after liftoff, and urged the National Aeronautics and Space Administration (NASA) to improve and install new safety features on the shuttles and in its organizational handling of future missions.",
+    "description": "Space Shuttle Challenger disaster report"
+  }
+]

@@ -12,6 +12,7 @@ build/
 *.so
 .env
 .venv/
-feynman_taste/data/raw/*.json
-feynman_taste/data/processed/*.json
+# Keep raw and processed data in repo
+# feynman_taste/data/raw/*.json
+# feynman_taste/data/processed/*.json
 feynman_taste/data/embeddings/*.json

@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Space-Time Approach to Non-Relativistic Quantum Mechanics",
+    "year": 1948,
+    "journal": "Reviews of Modern Physics",
+    "topic": "path_integral",
+    "taste_relevance": "Physical intuition: reformulated QM as sum over paths, making particle trajectories visualizable"
+  },
+  {
+    "title": "Space-Time Approach to Quantum Electrodynamics",
+    "year": 1949,
+    "journal": "Physical Review",
+    "topic": "qed_spacetime",
+    "taste_relevance": "Computational pragmatism: provided calculational framework for QED that was physically transparent"
+  },
+  {
+    "title": "Mathematical Formulation of the Quantum Theory of Electromagnetic Interaction",
+    "year": 1950,
+    "journal": "Physical Review",
+    "topic": "qed_formulation",
+    "taste_relevance": "Multiple representations: showed equivalence of path integral and operator approaches"
+  },
+  {
+    "title": "The Theory of Positrons",
+    "year": 1949,
+    "journal": "Physical Review",
+    "topic": "positrons",
+    "taste_relevance": "Physical intuition: reinterpreted positrons as electrons moving backward in time"
+  },
+  {
+    "title": "Application of Quantum Mechanics to Liquid Helium",
+    "year": 1953,
+    "journal": "Physical Review",
+    "topic": "superfluidity",
+    "taste_relevance": "Cross-domain versatility: applied quantum field theory methods to condensed matter"
+  },
+  {
+    "title": "Theory of the Fermi Interaction",
+    "year": 1958,
+    "journal": "Physical Review",
+    "topic": "weak_interaction",
+    "taste_relevance": "Bottom-up reasoning: V-A theory emerged from analyzing experimental data on weak decays"
+  },
+  {
+    "title": "Very High-Energy Collisions of Hadrons",
+    "year": 1969,
+    "journal": "Physical Review Letters",
+    "topic": "parton_model",
+    "taste_relevance": "Bottom-up reasoning: proposed partons from data analysis without committing to specific theory"
+  },
+  {
+    "title": "Simulating Physics with Computers",
+    "year": 1982,
+    "journal": "Int. J. Theoretical Physics",
+    "topic": "quantum_computing",
+    "taste_relevance": "Cross-domain versatility: founded quantum computing by connecting physics simulation to computation"
+  },
+  {
+    "title": "There's Plenty of Room at the Bottom",
+    "year": 1959,
+    "journal": "APS meeting talk",
+    "topic": "nanotechnology",
+    "taste_relevance": "Playful exploration: visionary talk on manipulating individual atoms, driven by curiosity"
+  }
+]

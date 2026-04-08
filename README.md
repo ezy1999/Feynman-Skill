@@ -84,24 +84,98 @@ feynman-taste rank "路径积分QFT" "公理化QFT" "S矩阵bootstrap"
 feynman-taste benchmark
 ```
 
-### Python API
+### 作为 Claude Code Skill 使用
+
+**快速模式（零配置，推荐）：**
+
+将 `.claude/skills/feynman-taste/SKILL.md` 拷贝到你的 Claude Code 项目的 `.claude/skills/` 目录下即可。无需 pip install，Claude 直接读取即可评估。
+
+```bash
+mkdir -p your-project/.claude/skills/feynman-taste/
+cp .claude/skills/feynman-taste/SKILL.md your-project/.claude/skills/feynman-taste/
+```
+
+然后在 Claude Code 中直接说：
+- "用费曼的思维评估一下这个方案"
+- "这个方法是不是 cargo cult？"
+- "Feynman would think about this approach?"
+
+**完整模式（Python API）：**
 
 ```python
 from feynman_taste.core.pipeline import TastePipeline
-
 pipeline = TastePipeline.default()
-result = pipeline.evaluate(
-    "用物理图像进行计算的散射截面方法",
-    cutoff_year=1965
-)
+result = pipeline.evaluate("用物理图像进行计算的散射截面方法", cutoff_year=1965)
 pipeline.print_evaluation(result)
 ```
 
-## 理解输出
+## 示例与输出
 
-- **[EVIDENCE]** = 有具体历史来源支持的评分
-- **[INFERRED]** = 模型推断，无直接证据
-- **Overall Score** 从 -1.0（强烈冲突）到 +1.0（高度契合）
+### 示例1：路径积分量子引力（科研场景）
+
+**输入：** "用路径积分和物理图像研究量子引力"（截止：1985）
+
+```
+FEYNMAN RESEARCH TASTE EVALUATION
+══════════════════════════════════
+Overall Score: +0.82 (confidence: 0.85)
+
+  physical_intuition     +0.95 [EVIDENCE] — 物理图像正是费曼所要求的。Nobel Lecture。
+  computational_pragmatism +0.80 [EVIDENCE] — 路径积分就是计算工具。能算出数字。
+  anti_formalism         +0.80 [EVIDENCE] — 物理图像胜过公理方法。Gleick (1992)。
+  multiple_representations +0.70 [EVIDENCE] — 路径积分是费曼推崇的多重表述之一。
+  cross_domain_versatility +0.60 [EVIDENCE] — QFT方法应用到引力=跨领域。
+  empirical_ruthlessness +0.40 [INFERRED] — 量子引力缺乏实验检验，费曼会很谨慎。
+```
+
+### 示例2：公理化量子场论（科研场景）
+
+**输入：** "严格的公理化代数量子场论"（截止：1970）
+
+```
+Overall Score: -0.41 (confidence: 0.80)
+
+  anti_formalism         -0.90 [EVIDENCE] — 这就是费曼明确反对的形式主义。"数学的疾病"。
+  physical_intuition     -0.80 [EVIDENCE] — 公理化=抽象，没有物理图像。
+  computational_pragmatism -0.60 [EVIDENCE] — 形式证明算不出散射截面。
+  bottom_up_reasoning    -0.70 [EVIDENCE] — 自上而下的公理方法，与费曼风格相反。
+  simplicity_of_explanation -0.50 [INFERRED] — 很难向大一新生解释。
+
+结论：费曼会深表怀疑。他会问："你能算出什么我用图方法算不出的东西吗？
+给我看一个数字。"
+```
+
+### 示例3：日常学习——"该读教科书还是做项目？"
+
+```
+  bottom_up_reasoning    +0.90 — 从具体项目开始，之后再归纳。
+  playful_exploration    +0.85 — 项目是好玩的。教科书不是。
+  independent_thinking   +0.80 — 自己动手做，别只背别人的答案。
+  empirical_ruthlessness +0.70 — 项目给你真实反馈：成功了还是没有？
+
+结论：费曼会压倒性地支持项目式学习。"你不是通过阅读学物理的——
+你是通过动手做。找一个谜题，玩弄它，把手弄脏。教科书是你卡住时
+才看的，不是起点。"
+```
+
+### 示例4："这个创业计划是真的还是 cargo cult？"
+
+```
+费曼的Cargo Cult检验（1974年Caltech演讲）:
+  empirical_ruthlessness: 有真实的、可测量的结果吗？还是只有结果的外表？
+  independent_thinking: 他们是自己想出来的，还是只在模仿成功公司的表面？
+  anti_formalism: 他们是用术语和框架来掩盖什么都不work的事实吗？
+
+费曼的测试："第一原则是你不能欺骗自己——而你是最容易被欺骗的人。"
+问：这个方案做了什么具体的、可测量的声明？它如何可能是错的？
+如果他们回答不了，那就是 cargo cult。
+```
+
+### 理解输出标记
+
+- **[EVIDENCE]** = 有具体历史来源支持
+- **[INFERRED]** = 模型推断
+- **Overall Score** 范围 -1.0 到 +1.0
 
 ## 项目结构
 
